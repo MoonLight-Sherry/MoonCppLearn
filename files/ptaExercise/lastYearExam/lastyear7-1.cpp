@@ -3,7 +3,7 @@
 int main()
 {
     float score[10] = {0};
-    float sum, result;
+    float sum = 0, result;
     for(int i = 0; i < 7; ++i)
     {
         scanf("%f", &score[i]);
@@ -22,7 +22,7 @@ int main()
     else{
         printf("D");
     }
-    printf(":%.2f\n", result);
+    printf(":%.1f\n", result);
     return 0;
 }
 
