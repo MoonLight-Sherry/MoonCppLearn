@@ -1,3 +1,4 @@
+//with bugs
 #include <stdio.h>
 #include <string.h>
 #define Max 100
@@ -22,7 +23,7 @@ int main()
     int found = 1, count = 0;
     while(found)
     {
-        for (int i = 0; i < s1 - s2; ++i)
+        for (int i = 0; i < s1 - s2 && i; ++i)
         {
             found = 1;
             for (int j = 0; j < s2; ++j)
