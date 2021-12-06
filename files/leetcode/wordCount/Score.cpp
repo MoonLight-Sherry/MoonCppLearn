@@ -38,7 +38,7 @@ int main1()
 	float sum =0, result;
 	for (int i = 0; i < 7; ++i)
 	{
-		scanf_s("%f", &score[i]);
+		scanf("%f", &score[i]);
 		sum += score[i];
 	}
 	result = sum / 7;
