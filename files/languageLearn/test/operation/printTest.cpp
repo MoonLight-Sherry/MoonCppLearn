@@ -2,6 +2,6 @@
 
 int main()
 {
-    printf("%c %d\n", 'A' - 'a', 'A' - 'a');
+    printf("%c \n%5d444\n", 'A' - 'a', 'A' - 'a');
     return 0;
 }
