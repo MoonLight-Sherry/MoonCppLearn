@@ -14,14 +14,14 @@ int main()
         {
             int from, to;
             cin >> from >> to;
-            if (from > to){from ^= to ^= from ^= to;}
+            if (from > to){swap(from, to);}
             tables.push_back({from, to});
         }
-        sort(tables.begin(), tables.end(), [](vector<int> a, vector<int> b){return a[1] < b[1];});
+        sort(tables.begin(), tables.end(), [](vector<int> a, vector<int> b){return a[0] < b[0];});
         int ans = 0;
         while(!tables.empty())
         {
-            vector<int> cur = tables[0];
+            vector<int> cur = *(tables.begin());
             tables.erase(tables.begin());
             if (tables.empty()){ans += 1; break;}
             ans += 1;
